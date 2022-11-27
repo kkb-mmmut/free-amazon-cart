@@ -108,18 +108,6 @@ class App extends React.Component {
       </div>
     );
   }
-}
-const styles = { 
- 
-    cartTotalPrice:{
-        height:60,
-        width:'50%', 
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems:'center', 
-        top:600,
-        background: '#0D4763'
-    } 
-};
+} 
 
 export default App;
