@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/free-amazon-cart/static/css/main.a12e2285.css",
+    "main.js": "/free-amazon-cart/static/js/main.f729fa42.js",
+    "index.html": "/free-amazon-cart/index.html",
+    "main.a12e2285.css.map": "/free-amazon-cart/static/css/main.a12e2285.css.map",
+    "main.f729fa42.js.map": "/free-amazon-cart/static/js/main.f729fa42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a12e2285.css",
+    "static/js/main.f729fa42.js"
+  ]
+}
