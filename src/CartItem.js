@@ -14,17 +14,26 @@ class CartItem extends React.Component {
     this.setState({
         qty:this.state.qty+1,
         price:this.state.price+this.state.price
-    })
+    });
+    // another type to change the state in the function.
+    // this.setState((prevState)=>{
+    //     return{
+    //         qty:prevState.qty+1
+    //     }
+    // });
   }
   decreaseQuantity=()=>{
-    this.setState({
-        qty:this.state.qty-1,
-        price:this.state.price-this.state.price
-        // if(this.state.qty>0)
-        // {
-        //     qty:this.state.qty-1;
-        // }
-    })
+    const {qty}=this.state;
+    if(qty===0)
+    {
+        return;
+    }
+        this.setState((prevState)=>{
+            return{
+                qty:prevState.qty-1,
+                price:prevState.price-(prevState.price/prevState.qty)
+            }
+        }); 
   }
   render () {
     const { price, title, qty } = this.state;
